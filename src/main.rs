@@ -1,11 +1,11 @@
-use days::day2::{calculate_feets, calculate_ribbon};
+use days::day3::at_least_one;
 
 mod days;
 mod utils;
 
 fn main() {
-    let input = utils::read_lines("./src/days/inputs/day2.txt");
-    let result = calculate_ribbon(input);
+    let input = utils::read_signle("./src/days/inputs/day3.txt".to_string());
+    let result = at_least_one(input);
 
     print!("{0}", result);
 }
