@@ -1,11 +1,11 @@
-use days::day3::{at_least_one, at_least_one_robo};
+use days::day4::mine_hash;
 
 mod days;
 mod utils;
 
 fn main() {
-    let input = utils::read_signle("./src/days/inputs/day3.txt".to_string());
-    let result = at_least_one_robo(input);
+    let input = utils::read_signle("./src/days/inputs/day4.txt".to_string());
+    let result = mine_hash(input);
 
     print!("{0}", result);
 }
