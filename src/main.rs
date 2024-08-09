@@ -5,7 +5,7 @@ mod utils;
 
 fn main() {
     let input = utils::read_signle("./src/days/inputs/day4.txt".to_string());
-    let result = mine_hash(input);
+    let result = mine_hash(input, "000000");
 
     print!("{0}", result);
 }

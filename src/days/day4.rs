@@ -1,4 +1,4 @@
-pub fn mine_hash(input: String) -> i32 {
+pub fn mine_hash(input: String, pattern: &str) -> i32 {
     let prepared_input = input.trim();
     let mut pad_number = 1;
     let mut hash;
@@ -10,7 +10,7 @@ pub fn mine_hash(input: String) -> i32 {
 
         hash = md5(&formatted);
 
-        if hash.starts_with("00000") {
+        if hash.starts_with(&pattern) {
             return pad_number;
         }
 
