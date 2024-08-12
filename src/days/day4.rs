@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn mine_hash(input: String, pattern: &str) -> i32 {
     let prepared_input = input.trim();
     let mut pad_number = 1;

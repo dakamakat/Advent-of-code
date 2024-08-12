@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use std::cmp::min;
 
 pub fn calculate_feets(input: Vec<String>) -> i32 {
