@@ -1,6 +1,5 @@
 #![allow(dead_code)]
 
-
 pub fn at_least_one(input: String) -> i32 {
     const WIDTH: usize = 500;
     const HEIGHT: usize = 500;
